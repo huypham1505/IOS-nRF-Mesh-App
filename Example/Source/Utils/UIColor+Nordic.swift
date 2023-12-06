@@ -44,9 +44,13 @@ extension UIColor {
         }
     }
     
-    static let nordicBlue = #colorLiteral(red: 0, green: 0.7181802392, blue: 0.8448022008, alpha: 1)
+    //static let nordicBlue = #colorLiteral(red: 0, green: 0.7181802392, blue: 0.8448022008, alpha: 1)
     
-    static let nordicLake = #colorLiteral(red: 0, green: 0.5483048558, blue: 0.8252354264, alpha: 1)
+    //static let nordicLake = #colorLiteral(red: 0, green: 0.5483048558, blue: 0.8252354264, alpha: 1)
+    
+    static let nordicBlue = #colorLiteral(red: 0.9567440152, green: 0.2853084803, blue: 0.3770255744, alpha: 1)
+    
+    static let nordicLake = #colorLiteral(red: 0.8138422955, green: 0.24269408, blue: 0.3188471754, alpha: 1)
     
     static let nordicRed = #colorLiteral(red: 0.9567440152, green: 0.2853084803, blue: 0.3770255744, alpha: 1)
     static let nordicRedDark = #colorLiteral(red: 0.8138422955, green: 0.24269408, blue: 0.3188471754, alpha: 1)
