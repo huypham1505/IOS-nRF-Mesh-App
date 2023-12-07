@@ -225,7 +225,7 @@
                     </view>
                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cFg-Ds-bZw">
                         <rect key="frame" x="345" y="451" width="51" height="31"/>
-                        <color key="onTintColor" red="0.0" green="0.46666666670000001" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="onTintColor" systemColor="systemRedColor"/>
                         <connections>
                             <action selector="secureNetworkBeaconDidChange:" destination="RhT-zv-Hbx" eventType="valueChanged" id="agy-wL-Uls"/>
                         </connections>
@@ -336,14 +336,14 @@
                     </view>
                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ztF-Vw-61s">
                         <rect key="frame" x="345" y="642" width="51" height="31"/>
-                        <color key="onTintColor" red="0.0" green="0.46666666670000001" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="onTintColor" systemColor="systemRedColor"/>
                         <connections>
                             <action selector="gattProxyDidChange:" destination="RhT-zv-Hbx" eventType="valueChanged" id="Qb8-Jp-AcR"/>
                         </connections>
                     </switch>
                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="plw-fg-Zic">
                         <rect key="frame" x="345" y="833.5" width="51" height="31"/>
-                        <color key="onTintColor" red="0.0" green="0.46666666670000001" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="onTintColor" systemColor="systemRedColor"/>
                         <connections>
                             <action selector="friendFeatureDidChange:" destination="RhT-zv-Hbx" eventType="valueChanged" id="7MY-X0-ITr"/>
                         </connections>

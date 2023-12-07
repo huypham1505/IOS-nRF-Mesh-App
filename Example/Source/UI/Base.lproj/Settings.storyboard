@@ -171,7 +171,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rLZ-WC-zgo">
                                                     <rect key="frame" x="313" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" red="0.0" green="0.50196078430000002" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="onTintColor" systemColor="systemRedColor"/>
                                                     <connections>
                                                         <action selector="testModeDidChange:" destination="gHg-68-SP7" eventType="valueChanged" id="bFe-Rz-x59"/>
                                                     </connections>
