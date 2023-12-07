@@ -1558,7 +1558,7 @@
 				DEVELOPMENT_TEAM = 37RVFEFMT6;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Source/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "DQ Technician";
+				INFOPLIST_KEY_CFBundleDisplayName = "Dqsmart Tech";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1570,7 +1570,7 @@
 				MARKETING_VERSION = 4.1.0;
 				MODULE_NAME = ExampleApp;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dienquang.technician;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dqsmart.technician;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
@@ -1591,7 +1591,7 @@
 				DEVELOPMENT_TEAM = 37RVFEFMT6;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Source/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "DQ Technician";
+				INFOPLIST_KEY_CFBundleDisplayName = "Dqsmart Tech";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1603,7 +1603,7 @@
 				MARKETING_VERSION = 4.1.0;
 				MODULE_NAME = ExampleApp;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dienquang.technician;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dqsmart.technician;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
