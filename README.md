@@ -1,3 +1,28 @@
+## Version 4.1.0 build 2
+- Sắp xếp danh sách thiết bị được thêm mới nhất lên đầu trang (Network)
+  ```groovy
+  private struct Section {
+    ...
+    init(type: SectionType, nodes: [Node]) {
+      // MARK: - Đảo ngược sắp xếp danh sách thiết bị mới nhất lên đầu trang
+        // self.nodes = nodes
+        self.nodes = nodes.reversed()
+    }
+    ...
+  }
+  ```
+
+  ```groovy
+  func applyFilter(_ searchText: String) {
+    ...
+    else {
+      return Section(type: section.type, nodes: filteredNodes.reversed())
+    }
+    ...
+  }
+  ```
+
+
 [![GitHub license](https://img.shields.io/github/license/NordicSemiconductor/IOS-nRF-Mesh-Library)](https://github.com/NordicSemiconductor/IOS-nRF-Mesh-Library/blob/master/LICENSE)
 [![Version](http://img.shields.io/cocoapods/v/nRFMeshProvision.svg)](http://cocoapods.org/pods/nRFMeshProvision)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
