@@ -53,7 +53,9 @@ private struct Section {
     
     init(type: SectionType, nodes: [Node]) {
         self.type = type
-        self.nodes = nodes
+        // MARK: - Đảo ngược sắp xếp danh sách thiết bị mới nhất lên đầu trang
+        // self.nodes = nodes
+        self.nodes = nodes.reversed()
     }
     
     var title: String? {
@@ -87,6 +89,9 @@ class NetworkViewController: UITableViewController, UISearchBarDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        // MARK: - Đảo ngược sắp xếp danh sách thiết bị mới nhất lên đầu trang
+        filteredSections = sections.reversed()
+        // MARK: End
         MeshNetworkManager.instance.delegate = self
         reloadData()
     }
@@ -193,10 +198,15 @@ private extension NetworkViewController {
                         $0.name?.lowercased().contains(searchText.lowercased()) ?? false ||
                         $0.primaryUnicastAddress.asString().lowercased().contains(searchText.lowercased())
                     }
-                    return Section(type: section.type, nodes: filteredNodes)
+                    
+                    // MARK: - Đảo ngược sắp xếp danh sách thiết bị mới nhất lên đầu trang khi nhập tìm kiếm
+                    //return Section(type: section.type, nodes: filteredNodes)
+                    return Section(type: section.type, nodes: filteredNodes.reversed())
                 }
                 .filter { !$0.nodes.isEmpty }
+            
         }
+        
         tableView.reloadData()
         
         if filteredSections.isEmpty {
@@ -232,7 +242,7 @@ private extension NetworkViewController {
 }
 
 extension NetworkViewController: ProvisioningViewDelegate {
-    
+
     func provisionerDidProvisionNewDevice(_ node: Node, whichReplaced previousNode: Node?) {
         performSegue(withIdentifier: "configure", sender: (node, previousNode))
     }
