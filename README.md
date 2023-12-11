@@ -1,5 +1,6 @@
 ## Version 4.1.0 build 2
 - Sắp xếp danh sách thiết bị được thêm mới nhất lên đầu trang (Network)
+  ```groovy
   private struct Section {
     ...
     init(type: SectionType, nodes: [Node]) {
@@ -9,6 +10,9 @@
     }
     ...
   }
+  ```
+
+  ```groovy
   func applyFilter(_ searchText: String) {
     ...
     else {
@@ -16,6 +20,7 @@
     }
     ...
   }
+  ```
 
 
 [![GitHub license](https://img.shields.io/github/license/NordicSemiconductor/IOS-nRF-Mesh-Library)](https://github.com/NordicSemiconductor/IOS-nRF-Mesh-Library/blob/master/LICENSE)
