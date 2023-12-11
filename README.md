@@ -21,6 +21,17 @@
     ...
   }
   ```
+- Sắp xếp danh sách groups mới nhất lên đầu trang (Groups)
+  ```groovy
+    func reloadData() {
+        if let network = MeshNetworkManager.instance.meshNetwork {
+            // MARK: - Đảo ngược sắp xếp danh sách groups mới nhất lên đầu trang
+            // groups = network.groups
+            groups = network.groups.reversed()
+        }
+        ...
+    }
+  ```
 
 
 [![GitHub license](https://img.shields.io/github/license/NordicSemiconductor/IOS-nRF-Mesh-Library)](https://github.com/NordicSemiconductor/IOS-nRF-Mesh-Library/blob/master/LICENSE)
