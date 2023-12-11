@@ -173,7 +173,9 @@ private extension GroupsViewController {
     
     func reloadData() {
         if let network = MeshNetworkManager.instance.meshNetwork {
-            groups = network.groups
+            // MARK: - Đảo ngược sắp xếp danh sách groups mới nhất lên đầu trang
+            // groups = network.groups
+            groups = network.groups.reversed()
         }
         applyFilter(searchController.searchBar.text ?? "")
     }
